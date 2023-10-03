@@ -19,8 +19,7 @@ export const App = () => {
 
   const onLeaveFeedback = option => {
     if (option === 'isGood') setIsGood(prevValue => prevValue + 1);
-    if (option === 'isNeutral')
-      setIsNeutral(prevValue => (isNeutral = prevValue + 1));
+    if (option === 'isNeutral') setIsNeutral(prevValue => prevValue + 1);
     if (option === 'isBad') setIsBad(prevValue => prevValue + 1);
   };
 

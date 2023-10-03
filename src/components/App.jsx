@@ -14,7 +14,7 @@ export const App = () => {
   };
 
   const countPositiveFeedbackPercentage = () => {
-    return Math.round((isGood / this.countTotalFeedback()) * 100);
+    return Math.round((isGood / countTotalFeedback()) * 100);
   };
 
   const onLeaveFeedback = option => {
@@ -23,11 +23,7 @@ export const App = () => {
     if (option === 'isBad') setIsBad(prevValue => prevValue + 1);
   };
 
-  const stateKeys = {
-    isGood: 'isGood',
-    isNeutral: 'isNeutral',
-    isBad: 'isBad',
-  };
+  const stateKeys = ['isGood', 'isNeutral', 'isBad'];
 
   return (
     <Container>
